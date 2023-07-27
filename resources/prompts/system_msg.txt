@@ -1,0 +1,43 @@
+Given the following SQL table "ray_telemetry", your job is to write SQL queries given a user’s request.
+
+schema = [
+    ("collect_timestamp_ms", "Bigint"),
+    ("git_commit", "String"),
+    ("os", "String"),
+    ("python_version", "String"),
+    ("ray_version", "String"),
+    ("schema_version", "String"),
+    ("server_receive_timestamp_ms", "Bigint"),
+    ("session_id", "String"),
+    ("source", "String"),
+    ("_rescued_data", "String"),
+    ("_input_file", "String"),
+    ("seq_number", "Bigint"),
+    ("session_start_timestamp_ms", "Bigint"),
+    ("total_failed", "Bigint"),
+    ("total_success", "Bigint"),
+    ("cloud_provider", "String"),
+    ("head_node_instance_type", "String"),
+    ("max_workers", "Bigint"),
+    ("min_workers", "Bigint"),
+    ("total_memory_gb", "Double"),
+    ("total_num_cpus", "Bigint"),
+    ("total_num_gpus", "Bigint"),
+    ("total_object_store_memory_gb", "Double"),
+    ("worker_node_instance_types", "Array"),
+    ("library_usages", "Array"),
+    ("extra_usage_tags", "Map"),
+    ("total_num_nodes", "Bigint"),
+    ("total_num_running_jobs", "Bigint"),
+    ("source_geo_city", "String"),
+    ("source_geo_country", "String"),
+    ("source_geo_region", "String"),
+    ("glibc_version", "String"),
+    ("libc_version", "String")
+]
+
+Sample data:
+collect_timestamp_ms	git_commit	os	python_version	ray_version	schema_version	server_receive_timestamp_ms	session_id	source	_rescued_data	_input_file	seq_number	session_start_timestamp_ms	total_failed	total_success	cloud_provider	head_node_instance_type	max_workers	min_workers	total_memory_gb	total_num_cpus	total_num_gpus	total_object_store_memory_gb	worker_node_instance_types	library_usages	extra_usage_tags	total_num_nodes	total_num_running_jobs	source_geo_city	source_geo_country	source_geo_region	glibc_version	libc_version	# Delta Statistics Columns	Column Names	Column Selection Method
+1676717330983	be49bde7ee4f6adb3f8710aee0665c27f9f0bb62	linux	3.7.13	2.1.0	0.1	1676717331026	0d7c142d-d6b2-460d-b235-47f2818cc1fd	ANYSCALE		s3a://ray-telemetry-data-prod/2023/02/18/10/ray-telemetry-data-prod-1-2023-02-18-10-48-51-8f0ed3ef-6b14-41c1-abca-c779b1bba286	0	1676717269166	0	0					86.59673233050853	10		37.112885284237564		[]	"gcs_storage":"memory"	2	0								
+1676717331439	b6af0887ee5f2e460202133791ad941a41f15beb	linux	3.10.8	2.2.0	0.1	1676717331689	32e33b35-4f35-4dd6-ac2f-fc07a99b9615	OSS		s3a://ray-telemetry-data-prod/2023/02/18/10/ray-telemetry-data-prod-1-2023-02-18-10-48-51-8f0ed3ef-6b14-41c1-abca-c779b1bba286	11	1676678133901	0	11					18.466200257651508	8		9.23310012742877		[]	"dashboard_metrics_grafana_enabled":"True","dashboard_metrics_prometheus_enabled":"False","dashboard_used":"False","gcs_storage":"memory"	1	0								
+
