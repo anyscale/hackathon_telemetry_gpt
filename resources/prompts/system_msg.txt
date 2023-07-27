@@ -1,4 +1,4 @@
-Given the following SQL table "ray_telemetry", your job is to write SQL queries given a user’s request.
+Given the following SQL table "ray_telemetry", your job is to write SQL queries given a user’s request, please only include the SQL query in the response, please don't include any explaination and result from the query.
 
 schema = [
     ("collect_timestamp_ms", "Bigint"),
